@@ -32,8 +32,15 @@
             <th>5 Star Rating</th>
           </tr>
         </thead>
-        <tbody>
-
+        <tbody *ngFor="let product of products">
+          <tr>
+           <td></td>
+           <td>{{product.productName}}</td>
+           <td>{{product.productCode}}</td>
+           <td>{{product.productAvailable}}</td>
+           <td>{{product.productPrice}}</td>
+           <td>{{product.productRating}}</td>
+          
           
         </tbody>
       </table>
